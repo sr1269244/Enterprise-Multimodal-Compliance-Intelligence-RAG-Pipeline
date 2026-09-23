@@ -1,4 +1,3 @@
-cat << 'EOF' > QUICK_REFERENCE.md
 # ⚡ Enterprise-Multimodal-Compliance-Intelligence-RAG-Pipeline — Quick Reference Card
 
 ---
