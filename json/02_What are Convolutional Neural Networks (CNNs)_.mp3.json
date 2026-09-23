@@ -1,0 +1,509 @@
+{
+  "chunks": [
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 0.0,
+      "end": 6.0,
+      "text": " Okay, pop quiz. What am I drawing?"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 6.0,
+      "end": 10.0,
+      "text": " I'm gonna make three predictions here."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 10.0,
+      "end": 14.0,
+      "text": " Firstly, you think I'd draw a house. You'd be right."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 14.0,
+      "end": 19.0,
+      "text": " Secondly, that it just came really easily to you, it was effortless."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 19.0,
+      "end": 23.0,
+      "text": " And thirdly, you're thinking that I'm not much of an artist."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 23.0,
+      "end": 25.0,
+      "text": " And you'd be right on all counts there."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 25.0,
+      "end": 29.0,
+      "text": " But how can we look at this set of geometric shapes and think,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 29.0,
+      "end": 34.0,
+      "text": " oh, a house. If you live in a house, I bet it looks nothing like this."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 34.0,
+      "end": 39.0,
+      "text": " Well, that ability to perform object identification that comes so easily to us"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 39.0,
+      "end": 43.0,
+      "text": " does not come so easily to a computer."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 43.0,
+      "end": 52.0,
+      "text": " But that is where we can apply something called convolutional neural networks to the problem."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 52.0,
+      "end": 59.0,
+      "text": " Now, a convolutional neural network, or a CNN,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 59.0,
+      "end": 64.0,
+      "text": " is an area of deep learning that specializes in pattern recognition."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 64.0,
+      "end": 70.0,
+      "text": " My name is Martin Keane, and I work in the IBM garage at IBM."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 70.0,
+      "end": 76.0,
+      "text": " Now, let's take a look at how CNN works at a high level."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 76.0,
+      "end": 80.0,
+      "text": " Well, let's break it down. CNN, convolutional neural network."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 80.0,
+      "end": 84.0,
+      "text": " Well, let's start with the artificial neural network part."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 84.0,
+      "end": 90.0,
+      "text": " This is a standard network that consists of multiple layers that are interconnected."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 90.0,
+      "end": 96.0,
+      "text": " And each layer receives some input, transforms that input to something else,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 96.0,
+      "end": 102.0,
+      "text": " and passes it as output to the next layer. That's how neural networks work."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 102.0,
+      "end": 107.0,
+      "text": " And CNN is a particular part of the neural network, or a section of layers."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 107.0,
+      "end": 110.0,
+      "text": " Let's say it's these three layers here."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 110.0,
+      "end": 115.0,
+      "text": " And within these layers, we have something called filters."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 115.0,
+      "end": 124.0,
+      "text": " And it's the filters that perform the pattern recognition that CNN is so good at."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 124.0,
+      "end": 128.0,
+      "text": " So, let's apply this to our house example."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 128.0,
+      "end": 135.0,
+      "text": " Now, if this house were an actual image, it would be a series of pixels, just like any image."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 137.0,
+      "end": 143.0,
+      "text": " And if we zoom in on a particular part of this house, let's say we zoom in around here,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 143.0,
+      "end": 149.0,
+      "text": " then we would get, well, the window."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 149.0,
+      "end": 155.0,
+      "text": " And what we're saying here is that a window consists of some perfectly straight lines."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 155.0,
+      "end": 157.0,
+      "text": " Almost perfectly straight lines."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 157.0,
+      "end": 159.0,
+      "text": " But you know, a window doesn't need to look like that."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 159.0,
+      "end": 164.0,
+      "text": " A window could equally look like this, and we would still say it was a window."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 164.0,
+      "end": 168.0,
+      "text": " The cool thing about CNN is that using filters,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 168.0,
+      "end": 173.0,
+      "text": " CNN could also say that these two objects represent the same thing."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 173.0,
+      "end": 176.0,
+      "text": " The way they do that, then, is through the application of these filters."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 176.0,
+      "end": 179.0,
+      "text": " So let's take a look at how that works."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 179.0,
+      "end": 184.0,
+      "text": " Now, a filter is basically just a three-by-three block."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 184.0,
+      "end": 189.0,
+      "text": " And within that block, we can specify a pattern to look for."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 189.0,
+      "end": 197.0,
+      "text": " We could say, let's look for a pattern like this, a right angle in our image."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 197.0,
+      "end": 201.0,
+      "text": " So what we do is we take this filter, and it's a three-by-three block here."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 201.0,
+      "end": 205.0,
+      "text": " We will analyze the equivalent three-by-three block up here as well."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 205.0,
+      "end": 212.0,
+      "text": " So we'll look at, first of all, these first group of three-by-three pixels,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 212.0,
+      "end": 217.0,
+      "text": " and we will see how close are they to the filter shape."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 217.0,
+      "end": 220.0,
+      "text": " And we'll give that a numeric score."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 220.0,
+      "end": 225.0,
+      "text": " Then we will move across one column to the right and look at the next three-by-three block of pixels"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 225.0,
+      "end": 228.0,
+      "text": " and score how close they are to the filter shape."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 228.0,
+      "end": 233.0,
+      "text": " And we will continue to slide over or convolve over all of these pixel layers"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 233.0,
+      "end": 239.0,
+      "text": " until we have mapped every three-by-three block."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 239.0,
+      "end": 244.0,
+      "text": " Now, that's just for one filter, but what that will give us is an array of numbers"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 244.0,
+      "end": 249.0,
+      "text": " that say how closely an image matches our filter."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 249.0,
+      "end": 251.0,
+      "text": " But we can add more filters."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 251.0,
+      "end": 259.0,
+      "text": " So we could add another three-by-three filter here, and perhaps this one looks for a shape like this."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 259.0,
+      "end": 267.0,
+      "text": " And we could add a third filter here, and perhaps this looks for a different kind of right angle shape."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 267.0,
+      "end": 273.0,
+      "text": " If we take the numeric arrays from all of these filters and combine them together in a process called pooling,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 273.0,
+      "end": 280.0,
+      "text": " then we have a much better understanding of what is contained within this series of pixels."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 280.0,
+      "end": 284.0,
+      "text": " Now, that's just the first layer of the CNN."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 284.0,
+      "end": 291.0,
+      "text": " And as we go deeper into the neural network, the filters become more abstract, or they can do more."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 291.0,
+      "end": 298.0,
+      "text": " So the second layer of filters perhaps can perform tasks like basic object recognition."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 298.0,
+      "end": 304.0,
+      "text": " So we could have filters here that might be able to recognize the presence of a window,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 304.0,
+      "end": 310.0,
+      "text": " or the presence of a door, or the presence of a roof."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 310.0,
+      "end": 317.0,
+      "text": " And as we go deeper into the CNN to the next layer, well, maybe these filters can perform even more abstract tasks,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 317.0,
+      "end": 325.0,
+      "text": " like being able to determine whether we're looking at a house, or we're looking at an apartment,"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 325.0,
+      "end": 329.0,
+      "text": " or whether we're looking at a skyscraper."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 329.0,
+      "end": 337.0,
+      "text": " So you can see the application of these filters increases as we go through the network and can perform more and more tasks."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 337.0,
+      "end": 342.0,
+      "text": " And that's a very high-level basic overview of what CNN is."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 342.0,
+      "end": 349.0,
+      "text": " It has a ton of business applications. Think of OCR, for example, for understanding handwritten documents."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 349.0,
+      "end": 354.0,
+      "text": " Think of visual recognition and facial detection and visual search."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 354.0,
+      "end": 360.0,
+      "text": " Think of medical imagery and looking at that and determining what is being shown in an imaging scan."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 360.0,
+      "end": 369.0,
+      "text": " And even think of the fact that we can apply a CNN to perform object identification for badly drawn houses."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 369.0,
+      "end": 372.0,
+      "text": " If you have any questions, please drop us a line below."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 372.0,
+      "end": 377.0,
+      "text": " And if you want to see more videos like this in the future, please like and subscribe."
+    },
+    {
+      "title": "What are Convolutional Neural Networks (C",
+      "number": "02",
+      "start": 377.0,
+      "end": 379.0,
+      "text": " Thanks for watching."
+    }
+  ],
+  "text": " Okay, pop quiz. What am I drawing? I'm gonna make three predictions here. Firstly, you think I'd draw a house. You'd be right. Secondly, that it just came really easily to you, it was effortless. And thirdly, you're thinking that I'm not much of an artist. And you'd be right on all counts there. But how can we look at this set of geometric shapes and think, oh, a house. If you live in a house, I bet it looks nothing like this. Well, that ability to perform object identification that comes so easily to us does not come so easily to a computer. But that is where we can apply something called convolutional neural networks to the problem. Now, a convolutional neural network, or a CNN, is an area of deep learning that specializes in pattern recognition. My name is Martin Keane, and I work in the IBM garage at IBM. Now, let's take a look at how CNN works at a high level. Well, let's break it down. CNN, convolutional neural network. Well, let's start with the artificial neural network part. This is a standard network that consists of multiple layers that are interconnected. And each layer receives some input, transforms that input to something else, and passes it as output to the next layer. That's how neural networks work. And CNN is a particular part of the neural network, or a section of layers. Let's say it's these three layers here. And within these layers, we have something called filters. And it's the filters that perform the pattern recognition that CNN is so good at. So, let's apply this to our house example. Now, if this house were an actual image, it would be a series of pixels, just like any image. And if we zoom in on a particular part of this house, let's say we zoom in around here, then we would get, well, the window. And what we're saying here is that a window consists of some perfectly straight lines. Almost perfectly straight lines. But you know, a window doesn't need to look like that. A window could equally look like this, and we would still say it was a window. The cool thing about CNN is that using filters, CNN could also say that these two objects represent the same thing. The way they do that, then, is through the application of these filters. So let's take a look at how that works. Now, a filter is basically just a three-by-three block. And within that block, we can specify a pattern to look for. We could say, let's look for a pattern like this, a right angle in our image. So what we do is we take this filter, and it's a three-by-three block here. We will analyze the equivalent three-by-three block up here as well. So we'll look at, first of all, these first group of three-by-three pixels, and we will see how close are they to the filter shape. And we'll give that a numeric score. Then we will move across one column to the right and look at the next three-by-three block of pixels and score how close they are to the filter shape. And we will continue to slide over or convolve over all of these pixel layers until we have mapped every three-by-three block. Now, that's just for one filter, but what that will give us is an array of numbers that say how closely an image matches our filter. But we can add more filters. So we could add another three-by-three filter here, and perhaps this one looks for a shape like this. And we could add a third filter here, and perhaps this looks for a different kind of right angle shape. If we take the numeric arrays from all of these filters and combine them together in a process called pooling, then we have a much better understanding of what is contained within this series of pixels. Now, that's just the first layer of the CNN. And as we go deeper into the neural network, the filters become more abstract, or they can do more. So the second layer of filters perhaps can perform tasks like basic object recognition. So we could have filters here that might be able to recognize the presence of a window, or the presence of a door, or the presence of a roof. And as we go deeper into the CNN to the next layer, well, maybe these filters can perform even more abstract tasks, like being able to determine whether we're looking at a house, or we're looking at an apartment, or whether we're looking at a skyscraper. So you can see the application of these filters increases as we go through the network and can perform more and more tasks. And that's a very high-level basic overview of what CNN is. It has a ton of business applications. Think of OCR, for example, for understanding handwritten documents. Think of visual recognition and facial detection and visual search. Think of medical imagery and looking at that and determining what is being shown in an imaging scan. And even think of the fact that we can apply a CNN to perform object identification for badly drawn houses. If you have any questions, please drop us a line below. And if you want to see more videos like this in the future, please like and subscribe. Thanks for watching."
+}

@@ -1,0 +1,782 @@
+{
+  "chunks": [
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 0.0,
+      "end": 2.92,
+      "text": " Let's take a detailed look at RNNs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 2.92,
+      "end": 5.88,
+      "text": " RNNs stand for recurrent neural network."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 5.88,
+      "end": 7.92,
+      "text": " It is a type of neural network designed"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 7.92,
+      "end": 10.08,
+      "text": " to handle sequence of data."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 10.08,
+      "end": 14.4,
+      "text": " Unlike regular neural networks, RNN has loops."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 14.4,
+      "end": 17.84,
+      "text": " And this is allowing them to use information from past."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 17.84,
+      "end": 21.28,
+      "text": " So when you look at it, this is a very powerful idea."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 21.28,
+      "end": 24.080000000000002,
+      "text": " The main feature of RNNs is their memory."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 24.080000000000002,
+      "end": 27.6,
+      "text": " They remember previous inputs from previous steps,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 27.64,
+      "end": 30.96,
+      "text": " which is helping them to analyze context in data,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 30.96,
+      "end": 33.96,
+      "text": " like words in sentence."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 33.96,
+      "end": 36.04,
+      "text": " Let's start with basic recurrent neuron."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 39.84,
+      "end": 46.68000000000001,
+      "text": " Imagine we have input xt and output yt."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 46.68000000000001,
+      "end": 49.2,
+      "text": " Unlike regular neurons, a recurrent neuron"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 49.2,
+      "end": 52.68000000000001,
+      "text": " has its own loop, allowing it to use information"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 52.68000000000001,
+      "end": 55.64,
+      "text": " from previous steps."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 55.64,
+      "end": 58.76,
+      "text": " We call this loop the hidden state."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 58.76,
+      "end": 62.64,
+      "text": " And we represent it with ht."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 62.64,
+      "end": 64.8,
+      "text": " To better understand how RNNs work,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 64.8,
+      "end": 68.32,
+      "text": " let's unroll this tiny recurrent network over time."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 69.32,
+      "end": 77.32,
+      "text": " We have inputs xt minus 2, xt minus 1, and xt."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 77.32,
+      "end": 84.32,
+      "text": " Corresponding outputs yt minus 2, yt minus 1, yt."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 84.32,
+      "end": 91.32,
+      "text": " With hidden states ht minus 1, ht minus 2, and ht."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 92.16,
+      "end": 100.96,
+      "text": " yt with hidden states ht minus 1, and ht."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 100.96,
+      "end": 105.75999999999999,
+      "text": " This unrolling shows how the RNN remember information"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 105.75999999999999,
+      "end": 110.08,
+      "text": " from previous steps through the hidden state."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 110.08,
+      "end": 113.52,
+      "text": " Each hidden state carries what the network has"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 113.52,
+      "end": 116.63999999999999,
+      "text": " learned from previous inputs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 116.63999999999999,
+      "end": 121.03999999999999,
+      "text": " This is like making it possible to capture dependencies"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 121.08000000000001,
+      "end": 123.2,
+      "text": " in data."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 123.2,
+      "end": 125.52000000000001,
+      "text": " Again, let's think about the single neuron."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 125.52000000000001,
+      "end": 129.28,
+      "text": " We have xt is our input, yt is our output,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 129.28,
+      "end": 132.68,
+      "text": " and we have ht, our hidden state."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 132.68,
+      "end": 136.64000000000001,
+      "text": " The output yt is computed based on the hidden state ht."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 136.64000000000001,
+      "end": 138.76,
+      "text": " And we can represent this relationship"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 138.76,
+      "end": 140.52,
+      "text": " with the following equation."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 140.52,
+      "end": 152.92000000000002,
+      "text": " The hidden state ht is calculated"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 152.92000000000002,
+      "end": 157.32000000000002,
+      "text": " based on the current input xt and previous hidden state ht"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 157.32000000000002,
+      "end": 158.04000000000002,
+      "text": " minus 1."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 158.04,
+      "end": 171.92,
+      "text": " In this equation, wx and wh are the weight matrices,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 171.92,
+      "end": 176.32,
+      "text": " xt is the current input, ht1 is the previous hidden state,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 176.32,
+      "end": 179.16,
+      "text": " and b is the bias term."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 179.16,
+      "end": 182.84,
+      "text": " And finally, activation function process this combination"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 182.84,
+      "end": 186.64,
+      "text": " to produce final result. In summary,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 186.67999999999998,
+      "end": 193.11999999999998,
+      "text": " RNNs use hidden state to carry information from past inputs"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 193.11999999999998,
+      "end": 195.72,
+      "text": " through the hidden state."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 195.72,
+      "end": 199.6,
+      "text": " The hidden state is updated at each time step,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 199.6,
+      "end": 204.0,
+      "text": " allowing the network to learn and remember previous inputs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 204.0,
+      "end": 207.56,
+      "text": " The ability to process sequences makes RNNs unique,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 207.56,
+      "end": 210.04,
+      "text": " and we can set them up in different way."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 210.04,
+      "end": 213.48,
+      "text": " One way is sequence-to-sequence network."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 213.48,
+      "end": 218.48,
+      "text": " In here, we feed the network with sequence of inputs,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 218.48,
+      "end": 220.95999999999998,
+      "text": " and it produces a sequence of outputs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 226.64,
+      "end": 230.28,
+      "text": " This is really good for tasks like predicting time series"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 230.28,
+      "end": 232.72,
+      "text": " data, such as stock prices."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 232.72,
+      "end": 236.12,
+      "text": " Another way is the sequence-to-vector network."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 236.12,
+      "end": 243.44,
+      "text": " In here, we feed the network with sequence of inputs,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 243.44,
+      "end": 250.48,
+      "text": " but we only care about the final output."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 250.48,
+      "end": 254.2,
+      "text": " Imagine you have a sequence of words from a movie review."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 254.2,
+      "end": 257.32,
+      "text": " We can feed the network with that sequence of words,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 257.32,
+      "end": 260.28,
+      "text": " and at the end, it can give us a sentiment score,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 260.28,
+      "end": 263.68,
+      "text": " like 0 for love, 1 for hate."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 263.68,
+      "end": 267.28,
+      "text": " Another way is vector-to-sequence network."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 267.28,
+      "end": 273.24,
+      "text": " In here, we feed the network with one single input,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 273.28000000000003,
+      "end": 277.52,
+      "text": " and it produces a sequence of outputs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 281.64,
+      "end": 283.44,
+      "text": " Imagine you have an image."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 283.44,
+      "end": 285.8,
+      "text": " We can feed the network with that image,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 285.8,
+      "end": 289.16,
+      "text": " and network can generate a caption describing"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 289.16,
+      "end": 291.92,
+      "text": " the image word by word."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 291.92,
+      "end": 295.92,
+      "text": " Lastly, there is an encoder-decoder architecture."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 295.92,
+      "end": 302.12,
+      "text": " In here, we feed the encoder part"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 302.12,
+      "end": 307.64,
+      "text": " with sequence of input, and it converts it into vector."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 307.64,
+      "end": 312.2,
+      "text": " And after that, decoder takes that vector"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 312.2,
+      "end": 315.8,
+      "text": " and produces a sequence of outputs."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 319.76,
+      "end": 322.64,
+      "text": " We can imagine this like this."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 322.64,
+      "end": 326.04,
+      "text": " So we have a sentence in one language,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 326.04,
+      "end": 329.88,
+      "text": " and we give that sentence into encoder part."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 329.88,
+      "end": 333.0,
+      "text": " Encoder part will convert it into vector,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 333.0,
+      "end": 337.28,
+      "text": " and decoder, after that, decoder will take that part,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 337.28,
+      "end": 341.2,
+      "text": " take that vector, and convert it into sentence"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 341.2,
+      "end": 343.4,
+      "text": " in another language."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 343.4,
+      "end": 346.36,
+      "text": " Now that we have covered how RNNs handle sequences,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 346.36,
+      "end": 348.2,
+      "text": " let's talk about some key challenges,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 348.2,
+      "end": 352.04,
+      "text": " vanishing exploding gradients, and complexity in training."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 352.04,
+      "end": 355.48,
+      "text": " One major issue is vanishing exploding gradients."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 355.48,
+      "end": 359.56,
+      "text": " When training RNNs, the gradient update weights"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 359.64,
+      "end": 361.52,
+      "text": " can become very large or very small"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 361.52,
+      "end": 363.56,
+      "text": " during the back propagation."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 363.56,
+      "end": 367.28000000000003,
+      "text": " So vanishing gradient make it hard for the network"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 367.28000000000003,
+      "end": 371.16,
+      "text": " to learn from previous inputs because updates are too tiny."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 376.96,
+      "end": 380.04,
+      "text": " Exploding gradients, on the other hand,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 380.04,
+      "end": 383.68,
+      "text": " keep the gradient unstable because updates are too large."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 390.56,
+      "end": 395.0,
+      "text": " To address these issues, researchers"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 395.0,
+      "end": 397.48,
+      "text": " develop specialized RNN architectures"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 397.48,
+      "end": 401.16,
+      "text": " like long short-term memory and gated recurrent units."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 401.16,
+      "end": 403.92,
+      "text": " These architectures use gates to control"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 403.92,
+      "end": 407.76,
+      "text": " the flow of information and keep the gradient stable"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 407.76,
+      "end": 409.88,
+      "text": " during the training."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 409.88,
+      "end": 415.16,
+      "text": " So another challenge in RNNs is complexity in training."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 415.16,
+      "end": 419.16,
+      "text": " RNNs requires a lot of computational power and time"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 419.24,
+      "end": 420.48,
+      "text": " to train."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 420.48,
+      "end": 426.64000000000004,
+      "text": " So this is because RNNs needs to process each sequence step"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 426.64000000000004,
+      "end": 427.6,
+      "text": " by step."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 427.6,
+      "end": 433.12,
+      "text": " This can be very time consuming, especially for long sequences."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 433.12,
+      "end": 436.84000000000003,
+      "text": " In conclusion, while RNNs are incredibly powerful,"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 436.84000000000003,
+      "end": 440.56,
+      "text": " they also come with challenges like vanishing exploding"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 440.56,
+      "end": 444.72,
+      "text": " gradients and complex training requirements."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 444.72,
+      "end": 449.04,
+      "text": " However, the advancements like LSTM and GRU architectures"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 449.04,
+      "end": 453.20000000000005,
+      "text": " help us to address the issues."
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 453.20000000000005,
+      "end": 456.20000000000005,
+      "text": " It is also allowing us to train RNNs"
+    },
+    {
+      "title": "The Power of Recurrent Neural Networks (RNN)",
+      "number": "03",
+      "start": 456.20000000000005,
+      "end": 459.6,
+      "text": " for a wide range of applications."
+    }
+  ],
+  "text": " Let's take a detailed look at RNNs. RNNs stand for recurrent neural network. It is a type of neural network designed to handle sequence of data. Unlike regular neural networks, RNN has loops. And this is allowing them to use information from past. So when you look at it, this is a very powerful idea. The main feature of RNNs is their memory. They remember previous inputs from previous steps, which is helping them to analyze context in data, like words in sentence. Let's start with basic recurrent neuron. Imagine we have input xt and output yt. Unlike regular neurons, a recurrent neuron has its own loop, allowing it to use information from previous steps. We call this loop the hidden state. And we represent it with ht. To better understand how RNNs work, let's unroll this tiny recurrent network over time. We have inputs xt minus 2, xt minus 1, and xt. Corresponding outputs yt minus 2, yt minus 1, yt. With hidden states ht minus 1, ht minus 2, and ht. yt with hidden states ht minus 1, and ht. This unrolling shows how the RNN remember information from previous steps through the hidden state. Each hidden state carries what the network has learned from previous inputs. This is like making it possible to capture dependencies in data. Again, let's think about the single neuron. We have xt is our input, yt is our output, and we have ht, our hidden state. The output yt is computed based on the hidden state ht. And we can represent this relationship with the following equation. The hidden state ht is calculated based on the current input xt and previous hidden state ht minus 1. In this equation, wx and wh are the weight matrices, xt is the current input, ht1 is the previous hidden state, and b is the bias term. And finally, activation function process this combination to produce final result. In summary, RNNs use hidden state to carry information from past inputs through the hidden state. The hidden state is updated at each time step, allowing the network to learn and remember previous inputs. The ability to process sequences makes RNNs unique, and we can set them up in different way. One way is sequence-to-sequence network. In here, we feed the network with sequence of inputs, and it produces a sequence of outputs. This is really good for tasks like predicting time series data, such as stock prices. Another way is the sequence-to-vector network. In here, we feed the network with sequence of inputs, but we only care about the final output. Imagine you have a sequence of words from a movie review. We can feed the network with that sequence of words, and at the end, it can give us a sentiment score, like 0 for love, 1 for hate. Another way is vector-to-sequence network. In here, we feed the network with one single input, and it produces a sequence of outputs. Imagine you have an image. We can feed the network with that image, and network can generate a caption describing the image word by word. Lastly, there is an encoder-decoder architecture. In here, we feed the encoder part with sequence of input, and it converts it into vector. And after that, decoder takes that vector and produces a sequence of outputs. We can imagine this like this. So we have a sentence in one language, and we give that sentence into encoder part. Encoder part will convert it into vector, and decoder, after that, decoder will take that part, take that vector, and convert it into sentence in another language. Now that we have covered how RNNs handle sequences, let's talk about some key challenges, vanishing exploding gradients, and complexity in training. One major issue is vanishing exploding gradients. When training RNNs, the gradient update weights can become very large or very small during the back propagation. So vanishing gradient make it hard for the network to learn from previous inputs because updates are too tiny. Exploding gradients, on the other hand, keep the gradient unstable because updates are too large. To address these issues, researchers develop specialized RNN architectures like long short-term memory and gated recurrent units. These architectures use gates to control the flow of information and keep the gradient stable during the training. So another challenge in RNNs is complexity in training. RNNs requires a lot of computational power and time to train. So this is because RNNs needs to process each sequence step by step. This can be very time consuming, especially for long sequences. In conclusion, while RNNs are incredibly powerful, they also come with challenges like vanishing exploding gradients and complex training requirements. However, the advancements like LSTM and GRU architectures help us to address the issues. It is also allowing us to train RNNs for a wide range of applications."
+}

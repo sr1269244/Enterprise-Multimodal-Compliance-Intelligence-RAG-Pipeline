@@ -1,0 +1,20 @@
+# Media
+audios/
+videos/
+
+# Secrets & Environment (Keeps API key safe)
+.env
+config.py
+
+# Python Environments & Cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+.DS_Store
+tempCodeRunnerFile.py
+response.txt
+
+# Embeddings Data (Do NOT ignore .joblib so Streamlit Cloud can access your data)
+# *.joblib

@@ -1,0 +1,166 @@
+{
+    "chunks": [
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 0.0,
+            "end": 14.4,
+            "text": " Let's take a detailed look at RNNs.  RNNs stand for recurrent neural network.  It is a type of neural network designed  to handle sequence of data.  Unlike regular neural networks, RNN has loops."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 14.4,
+            "end": 30.96,
+            "text": " And this is allowing them to use information from past.  So when you look at it, this is a very powerful idea.  The main feature of RNNs is their memory.  They remember previous inputs from previous steps,  which is helping them to analyze context in data,"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 30.96,
+            "end": 52.68000000000001,
+            "text": " like words in sentence.  Let's start with basic recurrent neuron.  Imagine we have input xt and output yt.  Unlike regular neurons, a recurrent neuron  has its own loop, allowing it to use information"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 52.68000000000001,
+            "end": 68.32,
+            "text": " from previous steps.  We call this loop the hidden state.  And we represent it with ht.  To better understand how RNNs work,  let's unroll this tiny recurrent network over time."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 69.32,
+            "end": 105.75999999999999,
+            "text": " We have inputs xt minus 2, xt minus 1, and xt.  Corresponding outputs yt minus 2, yt minus 1, yt.  With hidden states ht minus 1, ht minus 2, and ht.  yt with hidden states ht minus 1, and ht.  This unrolling shows how the RNN remember information"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 105.75999999999999,
+            "end": 123.2,
+            "text": " from previous steps through the hidden state.  Each hidden state carries what the network has  learned from previous inputs.  This is like making it possible to capture dependencies  in data."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 123.2,
+            "end": 138.76,
+            "text": " Again, let's think about the single neuron.  We have xt is our input, yt is our output,  and we have ht, our hidden state.  The output yt is computed based on the hidden state ht.  And we can represent this relationship"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 138.76,
+            "end": 171.92,
+            "text": " with the following equation.  The hidden state ht is calculated  based on the current input xt and previous hidden state ht  minus 1.  In this equation, wx and wh are the weight matrices,"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 171.92,
+            "end": 193.11999999999998,
+            "text": " xt is the current input, ht1 is the previous hidden state,  and b is the bias term.  And finally, activation function process this combination  to produce final result. In summary,  RNNs use hidden state to carry information from past inputs"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 193.11999999999998,
+            "end": 210.04,
+            "text": " through the hidden state.  The hidden state is updated at each time step,  allowing the network to learn and remember previous inputs.  The ability to process sequences makes RNNs unique,  and we can set them up in different way."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 210.04,
+            "end": 232.72,
+            "text": " One way is sequence-to-sequence network.  In here, we feed the network with sequence of inputs,  and it produces a sequence of outputs.  This is really good for tasks like predicting time series  data, such as stock prices."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 232.72,
+            "end": 257.32,
+            "text": " Another way is the sequence-to-vector network.  In here, we feed the network with sequence of inputs,  but we only care about the final output.  Imagine you have a sequence of words from a movie review.  We can feed the network with that sequence of words,"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 257.32,
+            "end": 277.52,
+            "text": " and at the end, it can give us a sentiment score,  like 0 for love, 1 for hate.  Another way is vector-to-sequence network.  In here, we feed the network with one single input,  and it produces a sequence of outputs."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 281.64,
+            "end": 295.92,
+            "text": " Imagine you have an image.  We can feed the network with that image,  and network can generate a caption describing  the image word by word.  Lastly, there is an encoder-decoder architecture."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 295.92,
+            "end": 322.64,
+            "text": " In here, we feed the encoder part  with sequence of input, and it converts it into vector.  And after that, decoder takes that vector  and produces a sequence of outputs.  We can imagine this like this."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 322.64,
+            "end": 341.2,
+            "text": " So we have a sentence in one language,  and we give that sentence into encoder part.  Encoder part will convert it into vector,  and decoder, after that, decoder will take that part,  take that vector, and convert it into sentence"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 341.2,
+            "end": 355.48,
+            "text": " in another language.  Now that we have covered how RNNs handle sequences,  let's talk about some key challenges,  vanishing exploding gradients, and complexity in training.  One major issue is vanishing exploding gradients."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 355.48,
+            "end": 371.16,
+            "text": " When training RNNs, the gradient update weights  can become very large or very small  during the back propagation.  So vanishing gradient make it hard for the network  to learn from previous inputs because updates are too tiny."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 376.96,
+            "end": 401.16,
+            "text": " Exploding gradients, on the other hand,  keep the gradient unstable because updates are too large.  To address these issues, researchers  develop specialized RNN architectures  like long short-term memory and gated recurrent units."
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 401.16,
+            "end": 419.16,
+            "text": " These architectures use gates to control  the flow of information and keep the gradient stable  during the training.  So another challenge in RNNs is complexity in training.  RNNs requires a lot of computational power and time"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 419.24,
+            "end": 436.84000000000003,
+            "text": " to train.  So this is because RNNs needs to process each sequence step  by step.  This can be very time consuming, especially for long sequences.  In conclusion, while RNNs are incredibly powerful,"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 436.84000000000003,
+            "end": 456.20000000000005,
+            "text": " they also come with challenges like vanishing exploding  gradients and complex training requirements.  However, the advancements like LSTM and GRU architectures  help us to address the issues.  It is also allowing us to train RNNs"
+        },
+        {
+            "number": "03",
+            "title": "The Power of Recurrent Neural Networks (RNN)",
+            "start": 456.20000000000005,
+            "end": 459.6,
+            "text": " for a wide range of applications."
+        }
+    ],
+    "text": " Let's take a detailed look at RNNs. RNNs stand for recurrent neural network. It is a type of neural network designed to handle sequence of data. Unlike regular neural networks, RNN has loops. And this is allowing them to use information from past. So when you look at it, this is a very powerful idea. The main feature of RNNs is their memory. They remember previous inputs from previous steps, which is helping them to analyze context in data, like words in sentence. Let's start with basic recurrent neuron. Imagine we have input xt and output yt. Unlike regular neurons, a recurrent neuron has its own loop, allowing it to use information from previous steps. We call this loop the hidden state. And we represent it with ht. To better understand how RNNs work, let's unroll this tiny recurrent network over time. We have inputs xt minus 2, xt minus 1, and xt. Corresponding outputs yt minus 2, yt minus 1, yt. With hidden states ht minus 1, ht minus 2, and ht. yt with hidden states ht minus 1, and ht. This unrolling shows how the RNN remember information from previous steps through the hidden state. Each hidden state carries what the network has learned from previous inputs. This is like making it possible to capture dependencies in data. Again, let's think about the single neuron. We have xt is our input, yt is our output, and we have ht, our hidden state. The output yt is computed based on the hidden state ht. And we can represent this relationship with the following equation. The hidden state ht is calculated based on the current input xt and previous hidden state ht minus 1. In this equation, wx and wh are the weight matrices, xt is the current input, ht1 is the previous hidden state, and b is the bias term. And finally, activation function process this combination to produce final result. In summary, RNNs use hidden state to carry information from past inputs through the hidden state. The hidden state is updated at each time step, allowing the network to learn and remember previous inputs. The ability to process sequences makes RNNs unique, and we can set them up in different way. One way is sequence-to-sequence network. In here, we feed the network with sequence of inputs, and it produces a sequence of outputs. This is really good for tasks like predicting time series data, such as stock prices. Another way is the sequence-to-vector network. In here, we feed the network with sequence of inputs, but we only care about the final output. Imagine you have a sequence of words from a movie review. We can feed the network with that sequence of words, and at the end, it can give us a sentiment score, like 0 for love, 1 for hate. Another way is vector-to-sequence network. In here, we feed the network with one single input, and it produces a sequence of outputs. Imagine you have an image. We can feed the network with that image, and network can generate a caption describing the image word by word. Lastly, there is an encoder-decoder architecture. In here, we feed the encoder part with sequence of input, and it converts it into vector. And after that, decoder takes that vector and produces a sequence of outputs. We can imagine this like this. So we have a sentence in one language, and we give that sentence into encoder part. Encoder part will convert it into vector, and decoder, after that, decoder will take that part, take that vector, and convert it into sentence in another language. Now that we have covered how RNNs handle sequences, let's talk about some key challenges, vanishing exploding gradients, and complexity in training. One major issue is vanishing exploding gradients. When training RNNs, the gradient update weights can become very large or very small during the back propagation. So vanishing gradient make it hard for the network to learn from previous inputs because updates are too tiny. Exploding gradients, on the other hand, keep the gradient unstable because updates are too large. To address these issues, researchers develop specialized RNN architectures like long short-term memory and gated recurrent units. These architectures use gates to control the flow of information and keep the gradient stable during the training. So another challenge in RNNs is complexity in training. RNNs requires a lot of computational power and time to train. So this is because RNNs needs to process each sequence step by step. This can be very time consuming, especially for long sequences. In conclusion, while RNNs are incredibly powerful, they also come with challenges like vanishing exploding gradients and complex training requirements. However, the advancements like LSTM and GRU architectures help us to address the issues. It is also allowing us to train RNNs for a wide range of applications."
+}

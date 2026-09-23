@@ -1,0 +1,75 @@
+{
+    "chunks": [
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 0.0,
+            "end": 32.0,
+            "text": " Hi, I'm Sanjana Reddy, a machine learning engineer at Google's Advanced Solutions Lab.  There's a lot of excitement currently around generative AI and new advancements,  including new Vertex AI features such as GenAI Studio, Model Garden, GenAI API.  Our objective in this short session is to give you a solid footing on some of the underlying concepts  that make all the GenAI magic possible. Today, I'm going to talk about the attention mechanism"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 32.0,
+            "end": 64.32,
+            "text": " that is behind all the transformer models and which is core to the LLM models.  Let's say you want to translate an English sentence, the cat ate the mouse, to French.  You could use an encoder decoder. This is a popular model that is used to translate sentences.  The encoder decoder takes one word at a time and translates it at each time step.  However, sometimes the words in the source language do not align with the words in the"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 64.32,
+            "end": 99.67999999999999,
+            "text": " target language. Here's an example. Take the sentence, black cat ate the mouse. In this example,  the first English word is black. However, in the translation, the first French word is  which means cat in English. So how can you train a model to focus more on the word cat  instead of the word black at the first time step? To improve the translation, you can add what is  called the attention mechanism to the encoder decoder. Attention mechanism is a technique"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 99.67999999999999,
+            "end": 134.72,
+            "text": " that allows the neural network to focus on specific parts of an input sequence. This is done  by assigning weights to different parts of the input sequence with the most important parts  receiving the highest weights. This is what a traditional RNN-based encoder decoder looks like.  The model takes one word at a time as input, updates the hidden state, and passes it on to  the next time step. In the end, only the final hidden state is passed on to the decoder."
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 135.52,
+            "end": 172.56,
+            "text": " The decoder works with the final hidden state for processing and translates it to the target  language. An attention model differs from the traditional sequence-to-sequence model in two ways.  First, the encoder passes a lot more data to the decoder. So instead of just passing the final  hidden state number three to the decoder, the encoder passes all the hidden states from each  time step. This gives the decoder more context beyond just the final hidden state. The decoder"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 172.56,
+            "end": 209.35999999999999,
+            "text": " uses all the hidden state information to translate the sentence. The second change that the attention  mechanism brings is adding an extra step to the attention decoder before producing its output.  Let's take a look at what these steps are. To focus only on the most relevant parts of the input,  the decoder does the following. First, it looks at the set of encoder states that it has received.  Each encoder hidden state is associated with a certain word in the input sentence. Second,"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 209.35999999999999,
+            "end": 246.08,
+            "text": " it gives each hidden state a score. Third, it multiplies each hidden state by its softmax score  as shown here, thus amplifying hidden states with the highest scores and downsizing hidden states  with low scores. If we connect all of these pieces together, we're going to see how the attention  network works. Before moving on, let's define some of the notations on this slide. Alpha here represents  the attention weight at each time step. H represents the hidden state of the encoder RNN"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 246.08,
+            "end": 286.15999999999997,
+            "text": " at each time step. H subscript d represents the hidden state of the decoder RNN at each time step.  With the attention mechanism, the inversion of the black cat translation is clearly visible in the  attention diagram. And 8 translates as two words, homage and French. We can see the attention network  staying focused on the word 8 for two time steps. During the attention step, we use the encoder  hidden states and the H4 vector to calculate a context vector A4 for this time step. This is the"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 286.16,
+            "end": 323.76,
+            "text": " weighted sum. We then concatenate H4 and A4 into one vector. This concatenated vector is passed  through a feedforward neural network, one trained jointly with the model, to predict the next word.  The output of the feedforward neural network indicates the output word of this time step.  This process continues till the end of sentence token is generated by the decoder. This is how  you can use an attention mechanism to improve the performance of a traditional encoder-decoder"
+        },
+        {
+            "number": "05",
+            "title": "videoplayback",
+            "start": 323.76,
+            "end": 326.8,
+            "text": " architecture. Thank you so much for listening!"
+        }
+    ],
+    "text": " Hi, I'm Sanjana Reddy, a machine learning engineer at Google's Advanced Solutions Lab. There's a lot of excitement currently around generative AI and new advancements, including new Vertex AI features such as GenAI Studio, Model Garden, GenAI API. Our objective in this short session is to give you a solid footing on some of the underlying concepts that make all the GenAI magic possible. Today, I'm going to talk about the attention mechanism that is behind all the transformer models and which is core to the LLM models. Let's say you want to translate an English sentence, the cat ate the mouse, to French. You could use an encoder decoder. This is a popular model that is used to translate sentences. The encoder decoder takes one word at a time and translates it at each time step. However, sometimes the words in the source language do not align with the words in the target language. Here's an example. Take the sentence, black cat ate the mouse. In this example, the first English word is black. However, in the translation, the first French word is which means cat in English. So how can you train a model to focus more on the word cat instead of the word black at the first time step? To improve the translation, you can add what is called the attention mechanism to the encoder decoder. Attention mechanism is a technique that allows the neural network to focus on specific parts of an input sequence. This is done by assigning weights to different parts of the input sequence with the most important parts receiving the highest weights. This is what a traditional RNN-based encoder decoder looks like. The model takes one word at a time as input, updates the hidden state, and passes it on to the next time step. In the end, only the final hidden state is passed on to the decoder. The decoder works with the final hidden state for processing and translates it to the target language. An attention model differs from the traditional sequence-to-sequence model in two ways. First, the encoder passes a lot more data to the decoder. So instead of just passing the final hidden state number three to the decoder, the encoder passes all the hidden states from each time step. This gives the decoder more context beyond just the final hidden state. The decoder uses all the hidden state information to translate the sentence. The second change that the attention mechanism brings is adding an extra step to the attention decoder before producing its output. Let's take a look at what these steps are. To focus only on the most relevant parts of the input, the decoder does the following. First, it looks at the set of encoder states that it has received. Each encoder hidden state is associated with a certain word in the input sentence. Second, it gives each hidden state a score. Third, it multiplies each hidden state by its softmax score as shown here, thus amplifying hidden states with the highest scores and downsizing hidden states with low scores. If we connect all of these pieces together, we're going to see how the attention network works. Before moving on, let's define some of the notations on this slide. Alpha here represents the attention weight at each time step. H represents the hidden state of the encoder RNN at each time step. H subscript d represents the hidden state of the decoder RNN at each time step. With the attention mechanism, the inversion of the black cat translation is clearly visible in the attention diagram. And 8 translates as two words, homage and French. We can see the attention network staying focused on the word 8 for two time steps. During the attention step, we use the encoder hidden states and the H4 vector to calculate a context vector A4 for this time step. This is the weighted sum. We then concatenate H4 and A4 into one vector. This concatenated vector is passed through a feedforward neural network, one trained jointly with the model, to predict the next word. The output of the feedforward neural network indicates the output word of this time step. This process continues till the end of sentence token is generated by the decoder. This is how you can use an attention mechanism to improve the performance of a traditional encoder-decoder architecture. Thank you so much for listening!"
+}

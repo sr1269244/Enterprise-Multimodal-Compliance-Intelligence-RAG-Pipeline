@@ -1,0 +1,19 @@
+
+Here are video subtitle chunks containing video title,
+video number, start time in seconds, end time in seconds,
+the text at that time :
+
+[{"title":"What are Convolutional Neural Networks (C","number":"02","start":43.0,"end":76.0,"text":" But that is where we can apply something called convolutional neural networks to the problem.  Now, a convolutional neural network, or a CNN,  is an area of deep learning that specializes in pattern recognition.  My name is Martin Keane, and I work in the IBM garage at IBM.  Now, let's take a look at how CNN works at a high level."},{"title":"What are Convolutional Neural Networks (C","number":"02","start":76.0,"end":102.0,"text":" Well, let's break it down. CNN, convolutional neural network.  Well, let's start with the artificial neural network part.  This is a standard network that consists of multiple layers that are interconnected.  And each layer receives some input, transforms that input to something else,  and passes it as output to the next layer. That's how neural networks work."},{"title":"What are Convolutional Neural Networks (C","number":"02","start":102.0,"end":128.0,"text":" And CNN is a particular part of the neural network, or a section of layers.  Let's say it's these three layers here.  And within these layers, we have something called filters.  And it's the filters that perform the pattern recognition that CNN is so good at.  So, let's apply this to our house example."},{"title":"What are Convolutional Neural Networks (C","number":"02","start":310.0,"end":342.0,"text":" And as we go deeper into the CNN to the next layer, well, maybe these filters can perform even more abstract tasks,  like being able to determine whether we're looking at a house, or we're looking at an apartment,  or whether we're looking at a skyscraper.  So you can see the application of these filters increases as we go through the network and can perform more and more tasks.  And that's a very high-level basic overview of what CNN is."},{"title":"What are Convolutional Neural Networks (C","number":"02","start":342.0,"end":372.0,"text":" It has a ton of business applications. Think of OCR, for example, for understanding handwritten documents.  Think of visual recognition and facial detection and visual search.  Think of medical imagery and looking at that and determining what is being shown in an imaging scan.  And even think of the fact that we can apply a CNN to perform object identification for badly drawn houses.  If you have any questions, please drop us a line below."}]
+
+--------------------
+
+"Where is CNN taught?"
+
+User asked this question related to the video chunks,
+you have to answer in human way(don't mention the above format,
+its just for you) where and how much content is mentioned in which
+video (in which video and at what timestamp) and guide the user
+to go to that particular video.
+
+If user askes unrelated question, tell him that you can only
+answer questions related to the data.

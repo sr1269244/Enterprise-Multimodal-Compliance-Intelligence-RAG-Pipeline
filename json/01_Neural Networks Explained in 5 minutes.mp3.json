@@ -1,0 +1,397 @@
+{
+  "chunks": [
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 0.0,
+      "end": 4.68,
+      "text": " Here are five things to know about neural networks in in under five minutes."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 4.96,
+      "end": 8.08,
+      "text": " Number one, neural networks are composed of node"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 8.68,
+      "end": 11.88,
+      "text": " layers. There is an input node"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 12.88,
+      "end": 15.96,
+      "text": " layer, there is a hidden layer, and"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 16.84,
+      "end": 18.84,
+      "text": " there is an output"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 19.84,
+      "end": 21.76,
+      "text": " layer. And"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 21.76,
+      "end": 25.8,
+      "text": " these neural networks reflect the behavior of the human brain,"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 26.12,
+      "end": 31.12,
+      "text": " allowing computer programs to recognize patterns and solve common problems in the fields of AI and deep learning."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 31.12,
+      "end": 36.760000000000005,
+      "text": " In fact, we should be describing this as an artificial neural network or an"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 37.28,
+      "end": 41.4,
+      "text": " ANN to distinguish it from the very un-artificial neural network"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 41.8,
+      "end": 45.68,
+      "text": " that's operating in our heads. Now think of each node or"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 46.32,
+      "end": 50.8,
+      "text": " artificial neuron as its own linear regression model. That's number two."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 51.279999999999994,
+      "end": 58.12,
+      "text": " Linear regression is a mathematical model that's used to predict future events. The weights of the connections between the nodes"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 58.76,
+      "end": 62.199999999999996,
+      "text": " determines how much influence each input has on the output."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 62.199999999999996,
+      "end": 68.3,
+      "text": " So each node is composed of input data, weights, a bias or a threshold, and then an output."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 68.47999999999999,
+      "end": 75.8,
+      "text": " Now data is passed from one layer in the neural network to the next in what is known as a feed forward"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 76.12,
+      "end": 79.47999999999999,
+      "text": " network. Number three, to illustrate this"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 79.48,
+      "end": 84.82000000000001,
+      "text": " let's consider what a single node in our neural network might look like to decide should we go surfing."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 84.92,
+      "end": 88.28,
+      "text": " The decision to go or not is our predicted outcome or"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 88.84,
+      "end": 90.84,
+      "text": " known as our Y hat."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 92.24000000000001,
+      "end": 99.24000000000001,
+      "text": " Let's assume there are three factors influencing our decision. The wave's good. One for yes or zero for no."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 99.48,
+      "end": 104.08000000000001,
+      "text": " The waves are pumping so X1 equals 1, 1 for yes."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 104.68,
+      "end": 108.96000000000001,
+      "text": " Is the lineup empty? Well, unfortunately not. So that gets a 0."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 109.92,
+      "end": 113.52000000000001,
+      "text": " And then let's consider is it shark free out there? That's X3 and"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 114.08,
+      "end": 118.02000000000001,
+      "text": " yeah, no shark attacks have been reported. Now to each decision"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 118.02000000000001,
+      "end": 123.68,
+      "text": " we assign a weight based on its importance on a scale of 0 to 5. So let's say that the waves"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 124.16,
+      "end": 128.56,
+      "text": " we're going to score that one. Yeah, no, this is important. Let's give it a 5. And"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 129.32,
+      "end": 134.88,
+      "text": " for the crowds, that's W2. Yeah, not so important. We'll give that a 2. And"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 135.64,
+      "end": 139.79999999999998,
+      "text": " sharks, well, we'll give that a score of a 4."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 140.4,
+      "end": 146.42,
+      "text": " Now we can plug in these values into the formula to get the desired output."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 146.42,
+      "end": 151.04,
+      "text": " So Y hat equals 1 times 5 plus"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 151.84,
+      "end": 153.84,
+      "text": " 0 times 2 plus"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 154.8,
+      "end": 158.92,
+      "text": " 1 times 4. Then minus 3,"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 159.04,
+      "end": 163.48,
+      "text": " that's our threshold, and that gives us a value of 6."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 163.83999999999997,
+      "end": 168.16,
+      "text": " 6 is greater than 0 so the output of this node is 1."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 168.56,
+      "end": 173.67999999999998,
+      "text": " We're going surfing. And if we adjust the weights or the threshold we can achieve different outcomes."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 174.88,
+      "end": 176.51999999999998,
+      "text": " Number 4."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 176.51999999999998,
+      "end": 180.51999999999998,
+      "text": " Well, yes, but number 4. Neural networks rely on"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 181.2,
+      "end": 184.35999999999999,
+      "text": " training data to learn and improve their accuracy over time."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 184.52,
+      "end": 192.12,
+      "text": " We leverage supervised learning on labeled data sets to train the algorithm. As we train the model, we'll want to evaluate its accuracy"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 192.60000000000002,
+      "end": 194.60000000000002,
+      "text": " using something called a cost"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 195.52,
+      "end": 197.52,
+      "text": " function."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 197.92000000000002,
+      "end": 203.88000000000002,
+      "text": " Ultimately, the goal is to minimize our cost function to ensure the correctness of fit for any given observation."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 203.88000000000002,
+      "end": 211.08,
+      "text": " And that happens as the model adjusts its weights and biases to fit the training data set through what's known as gradient descent,"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 211.48000000000002,
+      "end": 216.16000000000003,
+      "text": " allowing the model to determine the direction to take to reduce errors or more specifically"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 216.64000000000001,
+      "end": 220.36,
+      "text": " minimize the cost function. And then finally number 5."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 220.52,
+      "end": 226.68,
+      "text": " There are multiple types of neural networks beyond the feed-forward neural network that we've described here. For example,"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 226.68,
+      "end": 232.72000000000003,
+      "text": " there are convolutional neural networks known as CNNs, which have a unique architecture"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 232.72000000000003,
+      "end": 239.48000000000002,
+      "text": " that's well suited for identifying patterns like image recognition. And there are recurrent neural networks or RNNs,"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 239.79999999999998,
+      "end": 244.23999999999998,
+      "text": " which are identified by their feedback loops. And RNNs are primarily leveraged"
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 244.39999999999998,
+      "end": 249.16,
+      "text": " using time series data to make predictions about future events like sales forecasting."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 249.51999999999998,
+      "end": 255.51999999999998,
+      "text": " So five things in five minutes. To learn more about neural networks, check out these videos."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 256.24,
+      "end": 257.88,
+      "text": " Thanks for watching."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 257.88,
+      "end": 260.59999999999997,
+      "text": " If you have any questions, please drop us a line below."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 260.59999999999997,
+      "end": 265.03999999999996,
+      "text": " And if you want to see more videos like this in the future, please like and subscribe."
+    },
+    {
+      "title": "Neural Networks Explained in 5 minutes",
+      "number": "01",
+      "start": 269.48,
+      "end": 272.44,
+      "text": " You"
+    }
+  ],
+  "text": " Here are five things to know about neural networks in in under five minutes. Number one, neural networks are composed of node layers. There is an input node layer, there is a hidden layer, and there is an output layer. And these neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI and deep learning. In fact, we should be describing this as an artificial neural network or an ANN to distinguish it from the very un-artificial neural network that's operating in our heads. Now think of each node or artificial neuron as its own linear regression model. That's number two. Linear regression is a mathematical model that's used to predict future events. The weights of the connections between the nodes determines how much influence each input has on the output. So each node is composed of input data, weights, a bias or a threshold, and then an output. Now data is passed from one layer in the neural network to the next in what is known as a feed forward network. Number three, to illustrate this let's consider what a single node in our neural network might look like to decide should we go surfing. The decision to go or not is our predicted outcome or known as our Y hat. Let's assume there are three factors influencing our decision. The wave's good. One for yes or zero for no. The waves are pumping so X1 equals 1, 1 for yes. Is the lineup empty? Well, unfortunately not. So that gets a 0. And then let's consider is it shark free out there? That's X3 and yeah, no shark attacks have been reported. Now to each decision we assign a weight based on its importance on a scale of 0 to 5. So let's say that the waves we're going to score that one. Yeah, no, this is important. Let's give it a 5. And for the crowds, that's W2. Yeah, not so important. We'll give that a 2. And sharks, well, we'll give that a score of a 4. Now we can plug in these values into the formula to get the desired output. So Y hat equals 1 times 5 plus 0 times 2 plus 1 times 4. Then minus 3, that's our threshold, and that gives us a value of 6. 6 is greater than 0 so the output of this node is 1. We're going surfing. And if we adjust the weights or the threshold we can achieve different outcomes. Number 4. Well, yes, but number 4. Neural networks rely on training data to learn and improve their accuracy over time. We leverage supervised learning on labeled data sets to train the algorithm. As we train the model, we'll want to evaluate its accuracy using something called a cost function. Ultimately, the goal is to minimize our cost function to ensure the correctness of fit for any given observation. And that happens as the model adjusts its weights and biases to fit the training data set through what's known as gradient descent, allowing the model to determine the direction to take to reduce errors or more specifically minimize the cost function. And then finally number 5. There are multiple types of neural networks beyond the feed-forward neural network that we've described here. For example, there are convolutional neural networks known as CNNs, which have a unique architecture that's well suited for identifying patterns like image recognition. And there are recurrent neural networks or RNNs, which are identified by their feedback loops. And RNNs are primarily leveraged using time series data to make predictions about future events like sales forecasting. So five things in five minutes. To learn more about neural networks, check out these videos. Thanks for watching. If you have any questions, please drop us a line below. And if you want to see more videos like this in the future, please like and subscribe. You"
+}
