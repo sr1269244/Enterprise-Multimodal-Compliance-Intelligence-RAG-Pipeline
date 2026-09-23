@@ -246,7 +246,7 @@ def generate_with_retry(client, prompt):
                 time.sleep(3 * (attempt + 1)) # Exponential backoff
             except APIError:
                 break # Try next available model
-                ```
+```
 
 
 ---
